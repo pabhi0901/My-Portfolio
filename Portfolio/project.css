@@ -1,0 +1,112 @@
+*{
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0; 
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.navbar{
+    height: 8%;
+    width: 100vw;
+    display: flex;
+    color: white;
+    /* margin: 0 auto; */
+    justify-content: space-between;
+    background-color: rgb(25, 35,45);
+}
+.navcont, .nitem1 , .nitem3{
+    background-color: rgb(25, 35,45);
+
+}
+
+.navcont{
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+    padding-top: 0.8em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(25, 35,45);;
+}
+
+#nav2{
+    font-size: larger;
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.abc{
+    transition: all;
+
+
+}
+
+.abc:hover{
+    color: antiquewhite;
+    font-weight: bold;
+    transition-duration: 0.5;
+}
+
+/* navbar ended */
+.container{
+    display: flex;
+    width: 100vw;
+    padding-top: 3rem;
+    padding-left: 15rem;
+    padding-right: 6rem;
+    gap: 60px;
+
+}
+
+#crd{
+    width: 40%;
+    box-shadow: 3px 3px 3px 0px white;
+
+}
+
+#crd2{
+    width: 35%;
+}
+.cards{
+    
+    border: 3px solid white;
+    height: 85vh;
+}
+
+.Cimage{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+#img2{
+    position: relative;
+    height: 50%;
+}
+
+.details{
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.det1{
+    color: white;
+}
+
+.det2{
+    color: purple;
+}

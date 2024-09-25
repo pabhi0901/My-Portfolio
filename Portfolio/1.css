@@ -1,0 +1,291 @@
+*{
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0; 
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.navbar{
+    height: 8%;
+    width: 100vw;
+    display: flex;
+    color: white;
+    /* margin: 0 auto; */
+    justify-content: space-between;
+    background-color: rgb(25, 35,45);
+}
+.navcont, .nitem1 , .nitem3{
+    background-color: rgb(25, 35,45);
+
+}
+
+.navcont{
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+    padding-top: 0.8em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(25, 35,45);;
+}
+
+#nav2{
+    font-size: larger;
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.abc{
+    transition: all;
+
+
+}
+
+.abc:hover{
+    color: antiquewhite;
+    font-weight: bold;
+    transition-duration: 0.5;
+}
+
+/* navbar till here */
+.container2{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+
+}
+
+.cont_texts{
+    height: auto;
+    width: auto;
+margin: 0 auto;
+padding: 10%;
+color: white;
+position: absolute;
+left: 15%;
+top: 16%;
+display: flex;
+flex-direction: column;
+gap: 18px;
+
+}
+
+.conti{
+    height: 25%;
+    z-index: 999;
+    height: auto;
+}
+
+#text1{
+    font-size: 50px;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+span{
+    color: yellow;
+}
+
+#text2{
+    font-weight: bold;
+}
+
+.left_box1{
+    border-radius: 25%;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+   background-color: rgb(30, 30, 30);
+   position: absolute;
+   bottom: 10%;
+   left: 5%;
+   animation-name: left_box;
+   animation-duration: 10s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+.left_box2{
+    border-radius: 25%;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+   background-color: rgb(30, 30, 30);
+   position: absolute;
+   bottom: 10%;
+   left: 30%;
+   animation-name: box3;
+   animation-duration: 2s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+.lef_mid{
+    position: absolute;
+    border-radius: 20%;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(30, 30, 30); 
+    bottom: 0%;
+    left: 15%;
+    animation-name: left_box;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes left_box {
+    0% {
+        bottom: 10%;
+        transform: perspective(500px) rotateZ(0deg);
+    }
+
+    25% {
+        bottom: 50%;
+        transform: perspective(500px) rotateZ(90deg);
+    }
+
+    50% {
+        bottom: 90%;
+        transform: perspective(500px) rotateZ(180deg);
+    }
+
+    75% {
+        bottom: 50%;
+        transform: perspective(500px) rotateZ(270deg);
+    }
+
+    100% {
+        bottom: 10%;
+        transform: perspective(500px) rotateZ(360deg);
+    }
+}
+
+.right{
+    border-radius: 20%;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(30, 30, 30);
+    position: absolute;
+    right: -5%;
+    bottom: -2%;
+    animation-name: right;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes right {
+    
+    0% {
+        bottom: 10%;
+        transform: perspective(500px) rotateZ(0deg);
+        opacity: 0.8;
+    }
+
+
+    
+    25%{
+        bottom: 25%;
+        opacity: 0.6;
+        transform: perspective(500px) rotateZ(45deg);
+    }
+
+    50%{
+        bottom: 50%;
+        opacity: 0.5;
+        transform: perspective(500px) rotateZ(90deg);
+    }
+
+    
+    75%{
+        bottom: 70%;
+        opacity: 0.3;
+        transform: perspective(500px) rotateZ(135deg);
+    }
+
+
+    100%{
+
+        bottom: 100%;
+        opacity: 0.2;
+        transform: perspective(500px) rotateZ(180deg);
+
+    }
+
+
+    }
+
+
+
+.right_small{
+
+    border-radius: 25%;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+   background-color: rgb(30, 30, 30);
+   position: absolute;
+   bottom: 10%;
+   right: 30%;
+   animation-name: box3;
+   animation-duration: 2s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+
+}
+.middle{
+    border-radius: 20%;
+    position: absolute;
+    height: 80px;
+    width: 80px;
+   background-color: rgb(30, 30, 30);
+   position: absolute;
+   bottom: 10%;
+   right: 50%;
+   animation-name: box3;
+   animation-duration: 1.5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+
+@keyframes box3 {
+    
+    0%{
+        bottom: 10%;
+        transform: perspective(500px) rotateZ(0deg);
+        opacity: 1;
+
+    }
+
+    50%{
+     
+        bottom: 30%;
+        transform: perspective(500px) rotateZ(90deg);
+        opacity: 0.5;
+
+
+    }
+
+    100%{
+ 
+        bottom: 50%;
+        transform: perspective(500px) rotateZ(180deg);
+        opacity: 0.2;
+
+
+    }
+}
